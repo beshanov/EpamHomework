@@ -4,7 +4,7 @@ public class Note {
     private String text;
     private int index;
 
-    public Note(int index, String text){
+    public Note(int index, String text) {
         this.text = text;
         this.index = index;
     }

@@ -17,18 +17,18 @@ public class NotePad {
         noteArray[index] = note;
     }
 
-    void removeNote(int index){
+    void removeNote(int index) {
         noteArray[index] = null;
     }
 
-    void editNote(int index, String text){
-        if(index > noteArray.length-1 || noteArray[index] == null){
+    void editNote(int index, String text) {
+        if (index > noteArray.length - 1 || noteArray[index] == null) {
             throw new IndexOutOfBoundsException();
         }
         noteArray[index].setText(text);
     }
 
-    void showAllNotes(){
+    void showAllNotes() {
         for (int i = 0; i < noteArray.length; i++) {
             if (noteArray[i] != null) {
                 System.out.println(noteArray[i].getIndex() + " " + noteArray[i].getText());
