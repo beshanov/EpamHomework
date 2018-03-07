@@ -1,4 +1,4 @@
-package Task01_2;
+package intro.Task01_2;
 
 public class LoopOne {
 

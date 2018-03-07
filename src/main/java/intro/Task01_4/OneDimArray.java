@@ -1,4 +1,4 @@
-package Task01_4;
+package intro.Task01_4;
 
 public class OneDimArray {
     private double[] array;

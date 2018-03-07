@@ -1,4 +1,4 @@
-package Task01_3;
+package intro.Task01_3;
 
 import static java.lang.Math.tan;
 

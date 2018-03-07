@@ -1,4 +1,4 @@
-package Task01_5;
+package intro.Task01_5;
 
 public class SquareMatrix {
     int[][] elements;

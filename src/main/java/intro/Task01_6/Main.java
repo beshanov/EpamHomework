@@ -1,4 +1,4 @@
-package Task01_6;
+package intro.Task01_6;
 
 import java.util.InputMismatchException;
 import java.util.Scanner;
