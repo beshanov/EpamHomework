@@ -21,6 +21,5 @@ public class LoopOne {
     public static void main(String[] args) {
         LoopOne loop = new LoopOne();
         loop.getTable(50);
-
     }
 }
