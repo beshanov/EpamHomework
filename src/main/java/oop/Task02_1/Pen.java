@@ -5,8 +5,8 @@ public class Pen {
     private String mark;
     private int size;
 
-    
-    public Pen(int price, int size, String mark){
+
+    public Pen(int price, int size, String mark) {
         this.price = price;
         this.size = size;
         this.mark = mark;
@@ -37,22 +37,22 @@ public class Pen {
     }
 
     @Override
-    public boolean equals(Object obj){
-        if(this == obj) {
+    public boolean equals(Object obj) {
+        if (this == obj) {
             return true;
         }
-        if(obj == null || this.getClass() != obj.getClass()) {
+        if (obj == null || this.getClass() != obj.getClass()) {
             return false;
         }
 
-        Pen pen = (Pen)obj;
+        Pen pen = (Pen) obj;
         return (price == pen.price)
                 && (size == pen.size)
                 && ((mark == pen.mark) || ((mark != null) && mark.equals(pen.getMark())));
     }
 
     @Override
-    public int hashCode(){
+    public int hashCode() {
         final int prime = 31;
         int result = 1;
         result = prime * result + size;
@@ -61,7 +61,7 @@ public class Pen {
     }
 
     @Override
-    public String toString(){
+    public String toString() {
         return "Pen mark: " + mark + ", size: " + size + ", price: " + price;
     }
 }
