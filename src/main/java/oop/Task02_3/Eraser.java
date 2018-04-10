@@ -26,5 +26,4 @@ public class Eraser implements ToErase {
     public String toString(){
         return name + " " + price + "\n";
     }
-
 }
