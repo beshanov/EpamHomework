@@ -8,9 +8,9 @@ public class MultiLanguageApp {
         System.out.println("Select language:" +
                 "\n1 - English;" +
                 "\n2 - Русский;");
-        for (; ; ) {
-            String s = Integer.toString(new Scanner(System.in).nextInt());
-            switch (s) {
+        while (true) {
+            String questionNumber = Integer.toString(new Scanner(System.in).nextInt());
+            switch (questionNumber) {
                 case "1":
                     System.out.println("English version");
                     current = new Locale("en");
@@ -22,10 +22,18 @@ public class MultiLanguageApp {
                 default:
                     continue;
             }
+            break;
+        }
+        List<String> questions = new Questions(current).getListQuestions();
+        List<String> answers = new Answers(current).getListAnswers();
 
-            List<String> questions = new Questions(current).getListQuestions();
+        while (true) {
             for (String string : questions)
                 System.out.println(string);
+            System.out.println("Enter number of question:");
+            int answerNumber = (new Scanner(System.in).nextInt());
+            System.out.println(answers.get(answerNumber - 1));
+            System.out.println("===============");
         }
     }
 }
